@@ -1,7 +1,15 @@
 import React from 'react';
 
+import FunctionalCounter from './FunctionalCounter';
+import ClassCounter from './ClassCounter';
+
 function App() {
-  return <div>Hello world</div>;
+  return (
+    <div>
+      <FunctionalCounter />
+      <ClassCounter />
+    </div>
+  );
 }
 
 export default App;
