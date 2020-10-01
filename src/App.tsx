@@ -1,10 +1,17 @@
 import React from 'react'
 
-import Counter from './Counter'
+import Counter from './components/Counter'
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '2.75em 5em',
+        background: '#eee',
+      }}
+    >
       <Counter />
       <Counter format="hex" />
       <Counter format="binary" />

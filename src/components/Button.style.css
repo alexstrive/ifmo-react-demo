@@ -1,0 +1,16 @@
+.button {
+  background: pink;
+  color: darkblue;
+  font-size: large;
+  border: 0px;
+  border-radius: 0.35em;
+  padding: 1em;
+  cursor: pointer;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.button:active {
+  transition: all 0.1s ease-in;
+  background: rgb(255, 149, 167);
+}

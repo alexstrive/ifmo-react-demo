@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, FC } from 'react'
+import Button from './Button'
 
 type Props = {
   format?: 'binary' | 'decimal' | 'hex' | 'octal'
@@ -17,8 +18,12 @@ const FunctionalCounter: FC<Props> = ({ format = 'decimal' }) => {
   const [value, setValue] = useState(0)
   const [isOdd, setIsOdd] = useState(false)
 
-  const handleClick = useCallback(() => {
+  const increment = useCallback(() => {
     setValue(value + 1)
+  }, [value])
+
+  const decrement = useCallback(() => {
+    setValue(value - 1)
   }, [value])
 
   useEffect(() => {
@@ -30,13 +35,21 @@ const FunctionalCounter: FC<Props> = ({ format = 'decimal' }) => {
   }, [value])
 
   return (
-    <div>
+    <div
+      style={{
+        boxShadow: '0 0 20px #aaa',
+        borderRadius: 10,
+        padding: '1em',
+        background: 'white',
+        marginBottom: '.75em',
+      }}
+    >
       <h2>
         Current value is {value.toString(numberFormat)} ({format})
       </h2>
       <h5>Value is {isOdd ? 'odd' : 'even'}</h5>
-      <button onClick={handleClick}>Click me!</button>
-      <hr />
+      <Button onClick={increment}>Increment</Button>
+      <Button onClick={decrement}>Decrement</Button>
     </div>
   )
 }
