@@ -1,15 +1,14 @@
 import React from 'react'
 
-import FunctionalCounter from './FunctionalCounter'
+import Counter from './Counter'
 
 function App() {
   return (
     <div>
-      <FunctionalCounter />
-      <FunctionalCounter />
-      <FunctionalCounter />
-      <FunctionalCounter />
-      <FunctionalCounter />
+      <Counter />
+      <Counter format="hex" />
+      <Counter format="binary" />
+      <Counter format="octal" />
     </div>
   )
 }
