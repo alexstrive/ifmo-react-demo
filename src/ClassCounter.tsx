@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class ClassCounter extends Component {
-  state = { value: 0 };
+  state = { value: 0 }
 
   render() {
     return (
@@ -9,8 +9,8 @@ class ClassCounter extends Component {
         <h2>Class Counter</h2>
         {this.state.value}
       </div>
-    );
+    )
   }
 }
 
-export default ClassCounter;
+export default ClassCounter

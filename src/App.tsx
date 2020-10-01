@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import FunctionalCounter from './FunctionalCounter';
-import ClassCounter from './ClassCounter';
+import FunctionalCounter from './FunctionalCounter'
+import ClassCounter from './ClassCounter'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <FunctionalCounter />
       <ClassCounter />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
