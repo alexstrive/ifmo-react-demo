@@ -21,6 +21,7 @@ const FunctionalCounter: FC = () => {
       <h2>Current value is {value}</h2>
       <h5>Value is {isOdd ? 'odd' : 'even'}</h5>
       <button onClick={handleClick}>Click me!</button>
+      <hr />
     </div>
   )
 }

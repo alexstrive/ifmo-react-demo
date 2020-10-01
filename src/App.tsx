@@ -6,6 +6,10 @@ function App() {
   return (
     <div>
       <FunctionalCounter />
+      <FunctionalCounter />
+      <FunctionalCounter />
+      <FunctionalCounter />
+      <FunctionalCounter />
     </div>
   )
 }
