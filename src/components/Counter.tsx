@@ -37,7 +37,7 @@ const FunctionalCounter: FC<Props> = ({ format = 'decimal' }) => {
   return (
     <div
       style={{
-        boxShadow: '0 0 20px #aaa',
+        boxShadow: '0 0 20px rgba(20, 20, 50, 0.3)',
         borderRadius: 10,
         padding: '1em',
         background: 'white',

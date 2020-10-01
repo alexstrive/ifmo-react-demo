@@ -9,7 +9,7 @@ function App() {
         display: 'flex',
         flexDirection: 'column',
         padding: '2.75em 5em',
-        background: '#eee',
+        background: 'pink',
       }}
     >
       <Counter />
